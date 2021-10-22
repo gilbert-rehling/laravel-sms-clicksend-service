@@ -144,7 +144,7 @@ class ClickSendSms extends Notification
             $message = ClickSendMessage::create("SMS test to user #{$notifiable->id} with token {$this->token} by ClickSend");
     
             // OR instantiate:
-            $message = new ClickSendMessage("Your AdultMuse ad: {$this->host}/latest/view/{$notifiable->user_key}/{$notifiable->post_key} with ID {$this->adID} from AdultMuse");
+            $message = new ClickSendMessage("Your ad: {$this->host}/latest/view/{$notifiable->user_key}/{$notifiable->post_key} with ID {$this->adID} from AdSpace");
     
             // available methods:
             $message->content("SMS test to user #{$notifiable->id} with token {$this->token} by ClickSend");
